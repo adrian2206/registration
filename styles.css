@@ -1,0 +1,16 @@
+:root {
+    /* main background color */
+    --main-bg-clr: #FDF9F3; 
+    /* Registration form container */
+    --form-bg-color: #FFFFFF; 
+    /* Primary accent */
+    --accent-color: #76FF03;  
+    --accent-hover: #64DD17; 
+    /* Typography */
+    --text-primary: #2D2D2D; 
+    --text-secondary: #6B6B6B; 
+    /* UI Elements - Borders and inputs */
+    --input-field-bg: #F8F9FA;
+    --border-soft: #EAEAEA;
+    --shadow-subtle: rgba(0, 0, 0, 0.05);
+}
