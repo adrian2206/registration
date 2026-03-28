@@ -107,13 +107,18 @@ h1, h2, h3, h4, h5, h6 {
     min-height: 100dvh;
     position: relative;
     background: url("/images/IMG_0197.JPEG");
-    background-size: contain;
+    background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
 
 .right-column {
     width: 60%;
+    min-height: 100dvh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
 }
 
 
@@ -131,3 +136,24 @@ h1 {
   font-weight: 800;
 }
 
+section {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 2rem;
+}
+
+form {
+  background-color: var(--form-bg-color);
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding-left: 2rem;
+}
+
+.register {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
