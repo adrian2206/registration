@@ -1,18 +1,40 @@
 :root {
     /* main background color */
     --main-bg-clr: #FDF9F3; 
+
     /* Registration form container */
     --form-bg-color: #FFFFFF; 
+
     /* Primary accent */
     --accent-color: #76FF03;  
     --accent-hover: #64DD17; 
+
     /* Typography */
     --text-primary: #2D2D2D; 
     --text-secondary: #6B6B6B; 
+
     /* UI Elements - Borders and inputs */
     --input-field-bg: #F8F9FA;
     --border-soft: #EAEAEA;
     --shadow-subtle: rgba(0, 0, 0, 0.05);
+
+    /* Scara Major Third (1.25) */
+    --step-0: 1rem; 
+
+    /* Step -1 (Sub body) la 14px */
+    --step-minus-1: 0.875rem; 
+
+    /* h4: de la 1.25rem la 1.56rem */
+    --step-1: clamp(1.25rem, 2vw + 1rem, 1.56rem);
+
+    /* h3: de la 1.4rem la 1.95rem */
+    --step-2: clamp(1.4rem, 3vw + 1.1rem, 1.95rem);
+
+    /* h2: de la 1.6rem la 2.44rem */
+    --step-3: clamp(1.6rem, 4vw + 1.2rem, 2.44rem);
+
+    /* h1: de la 2rem la 3.05rem */
+    --step-4: clamp(2rem, 5vw + 1.5rem, 3.05rem);
 }
 
 /* 1. Use a more-intuitive box-sizing model */
@@ -38,7 +60,9 @@ body {
   /* 5. Improve text rendering */
   -webkit-font-smoothing: antialiased;
   /* Add base font-size */
-  font-size: 1rem;
+  font-size: var(--step-0);
+  background-color: var(--main-bg-clr);
+  font-family: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 }
 
 /* 6. Improve media defaults */
@@ -82,8 +106,8 @@ h1, h2, h3, h4, h5, h6 {
     width: 40%;
     min-height: 100dvh;
     position: relative;
-    background: url("/images/IMG_0197.PNG");
-    background-size: cover;
+    background: url("/images/IMG_0197.JPEG");
+    background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
 }
@@ -92,11 +116,18 @@ h1, h2, h3, h4, h5, h6 {
     width: 60%;
 }
 
+
 .logo {
     position: absolute;
     bottom: 0px;
-    height: 250px;
+    height: 200px;
     width: 100%;
     display: block;
+}
+
+h1 {
+  font-size: var(--step-4);
+  line-height: 1.1;
+  font-weight: 800;
 }
 
