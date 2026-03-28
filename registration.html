@@ -9,11 +9,44 @@
 <body>
     <div class="container">
         <div class="left-column">
-            <!-- <img class="labrador" src="images/IMG_0197.PNG" width="100%" alt="labrador retriever"> -->
             <img class="logo" src="images/trademark.svg" alt="logo" width="100%">
         </div>
+        <div class="right-column">
+            <section>
+                <h1>Join the Pack!</h1>
+                <p>Create your free account to unlock the ultimate dog breed guide. Whether you're a future pet parent or a dedicated enthusiast, being a member lets you:</p>
+                <ul>
+                    <li><strong>Save your favorites</strong> and build your personal wishlist.</li>
+                    <li><strong>Compare breeds</strong> side-by-side (temperament, size, and energy levels).</li>
+                    <li><strong>Get expert tips</strong> tailored to the breeds you love most.</li>
+                </ul>
+                <p><strong>Sign up in seconds and find your perfect four-legged match!</strong></p>
+            </section>
+            <form action="" method="get">
+                <div>
+                    <label for="firstName">First Name</label>
+                    <input type="text" name="firstName" placeholder="John" id="firstName" required>
+                    <label for="lastName">Last Name</label>
+                    <input type="text" name="lastName" placeholder="Smith" id="lastName" required>
+                </div>
+                <div>
+                    <label for="email">Email</label>
+                    <input type="email" name="email" placeholder="johnsmith@domain.com" id="email" required>
+                    <label for="phoneNumber">Phone Number</label>
+                    <input type="tel" name="phoneNumber" placeholder="07xxxxxxxx" pattern="^(07[0-9]{8}|02[0-9]{8}|03[0-9]{8})$" id="phoneNumber">
+                </div>
+                <div>
+                    <label for="password">Password</label>
+                    <input type="password" name="password" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$" id="password">
+                    <label for="confirmPassword">Confirm Password</label>
+                    <input type="password" name="confirmPassword" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$" id="confirmPassword">
+                </div>
+            </form>
+            <div>
+                <button type="submit">Create Account</button>
+                <p>Already have an account? <a href="" rel="noopener noreferrer">Log in</a></p>
+            </div>
         </div>
-        <div class="right-column"></div>
     </div>
 </body>
 </html>
