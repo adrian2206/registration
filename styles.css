@@ -198,6 +198,10 @@ fieldset div {
   transition: box-shadow 0.2s ease-in-out;
 }
 
+.field input:focus::placeholder {
+  color: transparent;
+}
+
 .field input::placeholder {
   color: var(--text-secondary);
   font-size: var(--step-minus-1);
