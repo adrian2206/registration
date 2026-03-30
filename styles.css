@@ -132,7 +132,7 @@ h1, h2, h3, h4, h5, h6 {
 
 h1 {
   font-size: var(--step-4);
-  line-height: 1.1;
+  line-height: 1.5;
   font-weight: 800;
   color: var(--text-primary);
 }
@@ -144,6 +144,7 @@ section {
   justify-content: center;
   padding-left: 2rem;
   color: var(--text-primary);
+  box-shadow: 0 16px 16px -16px var(--shadow-subtle);
 }
 
 form {
@@ -153,6 +154,7 @@ form {
   flex-direction: column;
   padding-left: 2rem;
   box-shadow: 0 16px 16px -16px var(--shadow-subtle);
+  border-radius: 10px;
 }
 
 fieldset {
@@ -216,6 +218,7 @@ legend {
   flex-direction: column;
   align-items: flex-start;
   margin: 2rem;
+   box-shadow: 0 24px 24px -24px var(--shadow-subtle);
 }
 
 .register button {
